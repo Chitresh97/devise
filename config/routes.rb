@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :teachers
   get 'home/show'
   devise_for :users
   root 'home#show'

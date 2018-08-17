@@ -19,6 +19,16 @@
   				<p><%= link_to "Sign Up", new_user_registration_path %></p>
   			<% end %>
   		</div>
+
+      <div class='auth-info-links'>
+    			<% if teacher_signed_in? %>
+    			  
+    			  <p><%= link_to "Sign Out", destroy_teacher_session_path, method: :delete %></p>
+    			<% else %>
+    				<p><%= link_to "Sign In", new_teacher_session_path %></p>
+    				<p><%= link_to "Sign Up", new_teacher_registration_path %></p>
+    			<% end %>
+    		</div>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
