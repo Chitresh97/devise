@@ -1,4 +1,6 @@
 class HomeController < ApplicationController
-  def show
+  def user
+  end
+  def teacher
   end
 end
